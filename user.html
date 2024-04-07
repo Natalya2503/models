@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <h1>Пользователи</h1>
+   
+    <ul>
+        {%for p in users %}
+        <li><h3>{{p.name}}</h3></li>
+        <li><h3>{{p.year_of_birth}}</h3></li>
+        <li><h3>{{p.description}}</h3></li>
+        {%if not forloop.last%}
+        <hr>
+        {%endif%}
+        {%endfor%}
+    </ul>
+    
+</body>
+</html>
